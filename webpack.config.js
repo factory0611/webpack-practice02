@@ -60,11 +60,15 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: './src/template/index.pug',
-            filename: 'index.html'
+            filename: 'index.html',
         }),
         new HtmlWebpackPlugin({
             template: './src/template/access.pug',
-            filename: 'access.html'
+            filename: 'access.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/template/members/taro.pug',
+            filename: 'members/taro.html',
         }),
         new CleanWebpackPlugin()
     ],
